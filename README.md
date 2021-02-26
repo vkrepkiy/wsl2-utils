@@ -1,5 +1,7 @@
 # [@vkrepkiy/wsl2-utils](https://github.com/vkrepkiy/wsl2-utils)
 
+[![Build Status](https://travis-ci.com/vkrepkiy/wsl2-utils.svg?branch=main)](https://travis-ci.com/vkrepkiy/wsl2-utils)
+
 WSL2-utils is a package initially made for a personal usage to improve web dev experience under WSL2.
 
 Example: `npx @vkrepkiy/wsl2-utils port-forward 9000`

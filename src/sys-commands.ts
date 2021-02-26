@@ -10,10 +10,9 @@ import { PortMap } from "./port-expressions";
 export function getIpAddrV4(): string | null {
   try {
     return execSync(
-      `ip addr | grep -Eo 'inet (192|172|10)\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}'`
+      `ip -4 addr show scope global | grep -Eo '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}' | head -1`
     )
       .toString()
-      .substr(5)
       .trim();
   } catch (e) {
     return null;

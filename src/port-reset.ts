@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import { reset } from "./sys-commands";
+import { cleanFirewallRules, resetPortProxy } from "./sys-commands";
 
-reset();
+resetPortProxy();
+cleanFirewallRules();

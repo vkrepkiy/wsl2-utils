@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { parsePortExpressionList } from "./port-expressions";
-import { addV4ToV4, getIpAddrV4 } from "./sys-commands";
+import { setFirewallRule, addPortProxyV4, getIpAddrV4 } from "./sys-commands";
 
 const ipAddr = getIpAddrV4();
 
@@ -23,4 +23,5 @@ console.debug(
     .join("\n")}`
 );
 
-addV4ToV4(ipAddr, portMaps);
+addPortProxyV4(ipAddr, portMaps);
+setFirewallRule(portMaps);

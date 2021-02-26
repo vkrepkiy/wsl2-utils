@@ -1,6 +1,6 @@
 {
   "name": "@vkrepkiy/wsl2-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tools to simplify using WSL2 for web dev.",
   "bin": {
     "port-forward": "dist/port-forward-v4.js",
